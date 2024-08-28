@@ -113,7 +113,7 @@ class _CalendarDatePicker2WithActionButtonsState extends State<CalendarDatePicke
         _editCache = _values;
         widget.onCancelTapped?.call();
         if ((widget.config.openedFromDialog ?? false) && (widget.config.closeDialogOnCancelTapped ?? true)) {
-          Navigator.pop(context, DateTime.now());
+          Navigator.pop(context, [DateTime.now()]);
         }
       }),
       child: Container(
