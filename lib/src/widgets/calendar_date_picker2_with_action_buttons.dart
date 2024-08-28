@@ -120,7 +120,7 @@ class _CalendarDatePicker2WithActionButtonsState extends State<CalendarDatePicke
         padding: widget.config.buttonPadding ?? const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
         child: widget.config.cancelButton ??
             Text(
-              "Today",
+              "TODAY",
               style: widget.config.cancelButtonTextStyle ??
                   TextStyle(
                     color: widget.config.selectedDayHighlightColor ?? colorScheme.primary,
